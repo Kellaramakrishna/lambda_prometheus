@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 4s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["l3btep1mbj.execute-api.ap-south-1.amazonaws.com"]
+    scheme: https
+    metrics_path: /Prod/metrics
